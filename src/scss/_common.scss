@@ -1,0 +1,186 @@
+.main_page {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  .App {
+    height: 100vh;
+    width: 100vw;
+    padding: 24px 120px;
+    overflow: scroll;
+    @include max-to("medium") {
+      padding: 24px 60px;
+    }
+    @include max-to("small") {
+      padding: 24px;
+    }
+    .home-banner {
+      .logo_container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .logo {
+          width: 40%;
+          @include max-to("small") {
+            width: 70%;
+          }
+        }
+        .flikker-text {
+          margin-bottom: 40px;
+          font-size: 52px;
+          @include max-to("medium") {
+            font-size: 38px;
+          }
+          @include max-to("small") {
+            font-size: 28px;
+          }
+          @include max-to("xsmall") {
+            font-size: 18px;
+            font-weight: 900;
+            margin-bottom: 20px;
+          }
+          &:first-child {
+            margin-right: -150px;
+            @include max-to("large") {
+              margin-right: -60px;
+            }
+            @include max-to("medium") {
+              margin-right: -70px;
+            }
+            @include max-to("small") {
+              margin-right: -100px;
+            }
+          }
+          &:last-child {
+            margin-left: -150px;
+            @include max-to("large") {
+              margin-left: -60px;
+            }
+            @include max-to("medium") {
+              margin-left: -70px;
+            }
+            @include max-to("small") {
+              margin-left: -100px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .w-50 {
+    @include max-to("medium") {
+      width: 70% !important;
+    }
+    @include max-to("small") {
+      width: 100% !important;
+    }
+  }
+
+  .social-desk {
+    display: flex;
+    align-items: center;
+    // position: absolute;
+    position: -webkit-sticky;
+    bottom: 0;
+    position: sticky;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 36px;
+    transition: ease 2s;
+    svg {
+      margin-bottom: 30px;
+      &:hover {
+        transform: translateY(-2px);
+        color: #44d62c;
+      }
+    }
+    .line {
+      /* transform: rotate(90deg); */
+      border-radius: 4px;
+      height: 200px;
+      width: 2px;
+      background-color: #44d62c;
+    }
+    @include max-to("medium") {
+      display: none;
+    }
+  }
+}
+
+.flikker-text {
+  /* color: green; */
+  color: #44d62c;
+  letter-spacing: 5px;
+  animation: text-flicker 3s linear infinite;
+  #offset {
+    animation: letter-flicker 2s linear infinite;
+  }
+}
+
+.typewriter {
+  display: grid;
+  place-items: center;
+  .typing {
+    color: #8892b0;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #44d62c; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.05em; /* Adjust as needed */
+    width: 18ch;
+    animation: typing 3.5s steps(18),
+      blink-caret 0.75s step-end infinite alternate;
+  }
+}
+
+.mail-link {
+  border: 1px solid #44d62c;
+  padding: 8px 24px;
+  text-decoration: none;
+  color: #44d62c;
+  border-radius: 4px;
+  margin-top: 24px;
+}
+
+.about {
+  .content {
+    z-index: 99;
+    width: 50%;
+    @include max-to("medium") {
+      width: 100%;
+    }
+  }
+  .astro {
+    @include max-to("medium") {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: -100px;
+      bottom: 0;
+      left: 30%;
+      opacity: .4;
+      display: flex;
+      align-items: flex-end;
+
+    }
+  }
+}
+
+.social-desk-mobi{
+  display: none;
+  @include max-to("medium") {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+    justify-content: center;
+    svg{
+      margin: 0 8px;
+    }
+  }
+
+}

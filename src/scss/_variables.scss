@@ -1,0 +1,17 @@
+$white: #ffffff;
+$black: #000000;
+
+//text
+$neon: #44d62c;
+$primary: #ccd6f6;
+$secondary: #8892b0;
+
+$body-color: $black;
+$space: 200;
+
+$breakpoints: (
+  "xsmall": 576px,
+  "small": 767px,
+  "medium": 992px,
+  "large": 1200px,
+) !default;
