@@ -5,6 +5,13 @@
   }
 }
 
+/* The typing effect */
+@keyframes fillanimation {
+  from {
+    width: 0;
+  }
+}
+
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   50% {
@@ -15,99 +22,98 @@
 @keyframes text-flicker {
   0% {
     opacity: 0.1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
 
   2% {
     opacity: 1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   8% {
     opacity: 0.1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   9% {
     opacity: 1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   12% {
     opacity: 0.1;
-    text-shadow: 0px 0px #44d62c;
+    text-shadow: 0px 0px $neon;
   }
   20% {
     opacity: 1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   25% {
     opacity: 0.3;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   30% {
     opacity: 1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
 
   70% {
     opacity: 0.7;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
 
   72% {
     opacity: 0.2;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
 
   77% {
     opacity: 0.9;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   100% {
     opacity: 0.9;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
 }
 
 @keyframes letter-flicker {
   0% {
     opacity: 0.1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   2% {
     opacity: 0.1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   4% {
     opacity: 1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
 
   19% {
     opacity: 1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   21% {
     opacity: 0.1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   23% {
     opacity: 1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
 
   80% {
     opacity: 1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   83% {
     opacity: 0.4;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
   87% {
     opacity: 1;
-    text-shadow: 0px 0px 29px #44d62c;
+    text-shadow: 0px 0px 29px $neon;
   }
 }
-
 @mixin min-to($breakpoint) {
   // If the key exists in the map
   @if map-has-key($breakpoints, $breakpoint) {

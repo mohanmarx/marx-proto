@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Righteous", serif;
+  font-family: "Righteous", cursive;
 }
 ul,
 ol {
@@ -170,24 +170,25 @@ a {
 
 html,
 body {
+  cursor: none;
   height: 100%;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Righteous", serif;
+  font-family: "Righteous", cursive;
   font-weight: normal;
   font-size: 1.05em;
   line-height: 1.62857143;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   color: $secondary;
-  background-color: $black;
+  background-color: transparent;
   min-height: 500px;
   overflow-y: auto;
   @include max-to("medium") {
     font-size: 1em;
   }
   @include max-to("small") {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 
@@ -196,4 +197,11 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   display: none;
+}
+
+canvas{
+  position: absolute;
+  top:0;
+  z-index: -10 ;
+
 }
