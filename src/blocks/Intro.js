@@ -14,7 +14,7 @@ function Intro() {
           MO<span id="offset">H</span>AN
         </h1>
         <div className="logo">
-          <img src="/marx.png" alt="logo" />
+          <img src="/marx.webp" alt="logo" />
         </div>
         <h1 className="flikker-text">
           K<span id="offset">U</span>MAR

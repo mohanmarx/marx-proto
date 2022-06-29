@@ -589,6 +589,19 @@
     height: 2px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    animation: fillanimation  3.5s ease;
+    animation: fillanimation 3.5s ease;
+  }
+}
+
+.get_touch {
+  .content {
+    z-index: 99;
+  }
+  .moon {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 40%;
+      opacity: 0.4;
   }
 }
