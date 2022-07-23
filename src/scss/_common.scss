@@ -185,6 +185,12 @@
   color: $neon;
   border-radius: 4px;
   margin-top: 24px;
+  &:hover {
+    box-shadow: rgba(68, 214, 44, 0.7) 0px 0px 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: $neon;
+    // animation: squashstretch 1.4s ease-in-out  ;
+  }
 }
 
 .about {
