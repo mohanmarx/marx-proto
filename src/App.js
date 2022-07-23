@@ -14,13 +14,12 @@ function App() {
         <About />
         <Experience />
         <GetTouch />
-
-        <section className="container mt-100">
+        <div className="container mt-100 position-relative">
           <div className="mx-auto text-center">
             <SocialBannerMobile />
-            <p>Designed & Built by Mohan_marx</p>
+            <p>designed & built by mohan_marx</p>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   );

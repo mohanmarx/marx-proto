@@ -5,7 +5,7 @@ import ReactRotatingText from "react-rotating-text";
 
 function Intro() {
   return (
-    <section className="container home-banner position-relative">
+    <div className="container home-banner position-relative">
       <div className="" style={{ position: "absolute", zIndex: 0 }}>
         <Lottie animationData={Stars} autoPlay loop />
       </div>
@@ -38,7 +38,7 @@ function Intro() {
           As a passion I'm a writer & director */}
         </p>
       </div>
-    </section>
+    </div>
   );
 }
 

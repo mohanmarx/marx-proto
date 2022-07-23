@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Righteous", cursive;
+  // font-family: "neon";
 }
 ul,
 ol {
@@ -114,7 +115,7 @@ output,
 ruby,
 ul,
 ol,
-section,
+div,
 summary,
 time,
 mark,
@@ -136,7 +137,7 @@ header,
 hgroup,
 menu,
 nav,
-section {
+div {
   display: block;
 }
 
@@ -175,7 +176,8 @@ body {
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Righteous", cursive;
+  // font-family: "Righteous", cursive;
+  font-family: "neon";
   font-weight: normal;
   font-size: 1.05em;
   line-height: 1.62857143;

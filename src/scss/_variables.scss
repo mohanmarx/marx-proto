@@ -11,8 +11,10 @@ $body-color: $black;
 $space: 200;
 
 $breakpoints: (
+  "xxsmall": 450px,
   "xsmall": 576px,
   "small": 767px,
   "medium": 992px,
   "large": 1200px,
+  "xlarge": 1400px,
 ) !default;

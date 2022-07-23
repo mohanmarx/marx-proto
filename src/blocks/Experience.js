@@ -1,17 +1,45 @@
 import React from "react";
 import Lottie from "lottie-react";
 import Code from "../lottie/code.json";
+import * as LottiePlayer from "@lottiefiles/lottie-player";
+import { create } from "@lottiefiles/lottie-interactivity";
 
 const Experience = () => {
+  const lottiee = React.useRef(null);
+
+  React.useEffect(() => {
+    lottiee.current.addEventListener("load", function (e) {
+      create({
+        mode: "scroll",
+        player: "#experience",
+        actions: [
+          {
+            visibility: [0, 1],
+            type: "seek",
+            frames: [0, 181],
+          },
+        ],
+      });
+    });
+  }, [lottiee]);
+
   return (
-    <section className="container experience">
+    <div className="container experience">
       <div className="mt-140 d-flex position-relative">
         <div className="coding">
-          <Lottie animationData={Code} autoPlay loop />
+          {/* <Lottie animationData={Code} autoPlay loop /> */}
+          <lottie-player
+            ref={lottiee} // 2. set the reference for the player
+            id="experience"
+            mode="scroll"
+            src="https://assets5.lottiefiles.com/packages/lf20_aim4u10w.json"
+            ></lottie-player>
         </div>
         <div className="content">
-          <p className="fs-small text-active">Are you serious about?</p>
-          <h2 className="typing text-primary">My Experience</h2>
+          <p className="fs-small text-active text-neon">
+            Are you serious about?
+          </p>
+          <h2 className="typing text-primary text-neon">My Experience</h2>
           <p className="mt-12">
             Frontend developer with {getMonths().years} years{" "}
             {getMonths().months % 12 > 0 ? `+` : ""} of of proven leadership and
@@ -46,7 +74,7 @@ const Experience = () => {
         </div>
       </div>
       <div>
-        <h2 className="typing text-primary mt-80">Skills</h2>
+        <h2 className="typing text-primary mt-80 text-neon">Skills</h2>
         <div className="mt-16">
           <p>ReactJs & JavaScript</p>
           <Progress width={"90%"} />
@@ -65,7 +93,7 @@ const Experience = () => {
           <Progress width={"80%"} />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -18,11 +18,11 @@ Object.defineProperty(Array.prototype, "chunk_inefficient", {
 
 function About() {
   return (
-    <section className="container about ">
+    <div className="container about ">
       <div className="mt-140 d-flex position-relative">
         <div className="content">
-          <p className="fs-small text-active">Want to know more?</p>
-          <h2 className="typing text-primary">About Me</h2>
+          <p className="fs-small text-active text-neon">Want to know more?</p>
+          <h2 className="typing text-primary text-neon">About Me</h2>
           <p className="mt-16">Hello folks !!</p>
           <p className="mt-16">
             I enjoy creating things that live on the internet. My interest in
@@ -62,7 +62,7 @@ function About() {
           <Lottie animationData={Planet} autoPlay loop />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
@@ -70,9 +70,9 @@ export default About;
 
 const LIST = [
   "JavaScript (ES6+)",
-  "React JS",
-  "Next JS",
-  "Gatsby JS",
+  "ReactJS",
+  "NextJS",
+  "GatsbyJS",
   "React Native",
   "TypeScript",
   "WordPress",
